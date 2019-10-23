@@ -19,6 +19,7 @@ public class Clerk extends Staff {
     }
 
 
+    @Override
     public double createSalary() {
         return (Math.random() * 10000) + 30000; // фиксированная ЗП клерка от 30000 до 40000 руб.
     }

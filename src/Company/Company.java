@@ -74,7 +74,7 @@ public class Company {
         for (Integer i: staff.keySet()) {
             System.out.printf("%03d  %s%n", i+1, staff.get(i).toString());
         }
-        System.out.println(staff.size());
+//        System.out.println(staff.size());
     }
 
 
