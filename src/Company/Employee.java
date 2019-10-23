@@ -1,7 +1,12 @@
 package Company;
 
-interface Employee {
+interface Employee extends Comparable<Employee> {
 
-    public int getMonthSalary();
 
+    double getMonthSalary();
+
+
+    default int compareTo(Employee o) {
+        return Double.compare(getMonthSalary(), o.getMonthSalary());
+    }
 }
